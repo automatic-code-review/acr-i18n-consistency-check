@@ -1,0 +1,9 @@
+{
+    "name": "meu-app-comparador",
+    "version": "1.0.0",
+    "description": "Compara chaves em arquivos JSON",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    }
+}
