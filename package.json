@@ -1,7 +1,7 @@
 {
-    "name": "meu-app-comparador",
+    "name": "acr-cpp-include-order",
     "version": "1.0.0",
-    "description": "Compara chaves em arquivos JSON",
+    "description": "Extensão do ACR (https://github.com/automatic-code-review) para verificar a consistência de chaves em arquivos de um projeto com estrutura i18n.",
     "main": "app.js",
     "scripts": {
       "start": "node app.js"
