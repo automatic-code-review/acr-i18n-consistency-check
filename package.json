@@ -1,0 +1,9 @@
+{
+    "name": "acr-i18n-consistency-check",
+    "version": "1.0.0",
+    "description": "Extensão do ACR (https://github.com/automatic-code-review) para verificar a consistência de chaves em arquivos de um projeto com estrutura i18n.",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    }
+}
