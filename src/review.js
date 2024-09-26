@@ -33,12 +33,12 @@ const getTypeModified = function(config){
 }
 
 const compareKeys = function(files, config) {
-    const {path_source} = config;
+    const {path_source_v2} = config;
 
     // Captura todas chaves dos arquivos
     const filesData = files.map((file) => {
-        const {path_source} = config;
-        const data = JSON.parse(fs.readFileSync(`${path_source}/${file}`, 'utf8'));
+        const {path_source_v2} = config;
+        const data = JSON.parse(fs.readFileSync(`${path_source_v2}/${file}`, 'utf8'));
     
         return Object.keys(data);
     });
