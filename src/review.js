@@ -12,13 +12,16 @@ const review = function(config){
         const {files, type} = comparison[key];
         const missingKeys = compareKeys(files, config);
         const messages = transformKeysInMessage(missingKeys, config);
-        const commitTitle = title.replace('${TYPE}', type).replace('${CHAVESQTD}', messages.length);
-        const comment = `<b>${commitTitle}</b><details>${messages.join('<br>')}</details>`;
 
-        comments.push({
-            id: generateMd5FromComment(comment),
-            comment
-        })
+        if(messages.length){
+            const commitTitle = title.replace('${TYPE}', type).replace('${CHAVESQTD}', messages.length);
+            const comment = `<b>${commitTitle}</b><details>${messages.join('<br>')}</details>`;
+
+            comments.push({
+                id: generateMd5FromComment(comment),
+                comment
+            })
+        }
     }
 
     return comments;
